@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* loại bỏ gạch chân và sét phông chữ family cho cả web */
+     text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none; 
+    
+}
+.header{
+    background-color:#000;
+    height: 46px;
+    /* poistion nó k kế thừa tính chất thẻ block */
+    /* tính chất block nó hay xuất hiện ở thẻ div */
+    /* inline block nó có cả thuuoc tính dòng và block */
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+   
+}
+.timkiem{
+    padding: 0 16px;
+    line-height: 46px;
+    color: white;
+   
+}
+.search:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.search{
+    background-color:black;
+    float: right;
+   
+}
+.nav{
+display: inline-block;
+}
+.nav >li{
+    display: inline-block;
+    position: relative;
+}
+.nav >li:hover> a,.navcon li:hover a{
+    background-color: #ccc;
+    color: black;
+}
+.nav >li a{
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    
+}
+.nav .navcon{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: black;
+
+}
+.nav >li:hover .navcon{
+    display: block;
+    /* bloc nó sẽ kế thừ chiều dọc lớp xha */
+}
+.navcon li a{
+    color: black;
+}
+.slider{
+    height: 500px;
+    background-color: black;
+    margin-top: 46px;
+    /* đoan này magrin top 1 khoảng 46px vì đoạn header đã có
+    phần chiều cao là 46px và nó position sát phía trên
+    sẽ bị đẩy xuông */
+    height: 50vw;
+    /* cho chiều cao bức ảnh luon luon băng 1 nửa của doc */
+    background-image: url(../assest/image/web3image/slider.jpg);
+    background-position:top;
+    background-size: cover;
+    position: relative;
+}
+.textconten{
+    position: absolute;
+    bottom: 47px;
+    /* 2 cách căn giữa dùng left right và width thì phải 
+    thêm text-align: center thì mới thực hiện */
+    width: 100%;
+    text-align: center;
+    color: blanchedalmond;
+}
+.text{
+    margin-top: 26px;
+}
+.contensection{
+    padding: 64px 16px;
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+.contensection .headingcontent{
+letter-spacing: 7px;
+
+}
+.contensection .sectioncontent{
+margin-top: 25px;
+margin-bottom: 25px;
+font-style: italic;
+}
+.contensection  .aboutcontent{
+    text-align: justify;
+    line-height: 1.4;
+    min-width: 500px;
+    margin-right: 0;
+    
+
+}
+.memberlist{
+    margin-top: 48px;
+}
+.memberlist .member{
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+.member .memberitem{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 5.4px;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: -8px;
+    padding-right: -8px;
+}
+.clear{
+    clear: both;
+}
+.colaful{
+    width: 100%;
+}
+.colaf{
+    width: 50%;
+}
+.white-text{
+    color: white!important;
+}
+/* tour */
+.toursection{
+    background-color: black;
+}
+.ticklist{
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.ticklist .soldout{
+ background-color: tomato;
+ color: white;
+ padding: 3px 4px;
+}
+.ticklist .continute{
+ float: right;
+ width: 24px;
+ height :24px;
+ background-color: #000;
+ color: white;
+ border-radius:  50%;
+ line-height: 24px;
+ text-align: center;
+
+}
+.ticklist li{
+    font-size: 15px;
+    padding: 12px 16px;
+    border-bottom: 1px solid#ddd;
+   
+}
+.placelist{
+ margin-top: 46px;
+}
+.placelist .placeitem{
+float: left;
+/* padding: 0px 8px; */
+width: 33.333333%;
+}
+.placeitem .newYour{
+    width: 100%;
+   
+}
+.placelist .placeover{
+ padding: 12px; line-height: 1.6;
+ background-color: tomato;
+}
+.placeover .placenew{
+
+}
+.placeover .contendate{
+
+}
+.placeover .contenplace{
+    
+}
+.placeover .buytick {
+ background-color: violet;
+ display: inline-block;
+ 
+}
+.Contactlist{
+    margin-top: 46px;
+    height: 800px;
+}
+.mapsection img{
+    width: 100%;
+}
+.footer{
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 24px;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.copyright{
+    padding-top: 15px;
+}
